@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -25,32 +26,6 @@
         counter() = 12 // Returns 1 more than the previous time.<br>
     </p>
     <p>abra o console para ver o resultado</p>
-
-
-    <script>
-        /**
-         * @param {number} n
-         * @return {Function} counter
-         */
-        var createCounter = function (n) {
-
-            return function () {
-                let newN = n;
-                n++;
-                return newN;
-            };
-        };
-        const counter = createCounter(10);
-        console.log(counter());
-        console.log(counter());
-        console.log(counter());
-        /**
-         * const counter = createCounter(10)
-         * counter() // 10
-         * counter() // 11
-         * counter() // 12
-         */
-    </script>
 </body>
 
 </html>
